@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D2CF5EB225E8ADB00C5588C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CF5E9225E8ADB00C5588C /* SignInViewController.swift */; };
+		3D2CF5EC225E8ADB00C5588C /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CF5EA225E8ADB00C5588C /* SignInViewController.xib */; };
 		3D3FE74F225A6A2400A61995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FE74E225A6A2400A61995 /* AppDelegate.swift */; };
 		3D3FE757225A6A2400A61995 /* SpareService.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FE755225A6A2400A61995 /* SpareService.xcdatamodeld */; };
 		3D3FE759225A6A2500A61995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FE758225A6A2500A61995 /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		362CAD798AA21AE7DEB327FC /* Pods-SpareServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SpareServiceTests/Pods-SpareServiceTests.release.xcconfig"; sourceTree = "<group>"; };
+		3D2CF5E9225E8ADB00C5588C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		3D2CF5EA225E8ADB00C5588C /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
 		3D3FE74B225A6A2400A61995 /* SpareService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpareService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3FE74E225A6A2400A61995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3FE756225A6A2400A61995 /* SpareService.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpareService.xcdatamodel; sourceTree = "<group>"; };
@@ -163,6 +167,8 @@
 				3D8FBFDD225A7297005AE074 /* HomeViewController.swift */,
 				3D8FBFE2225A8F93005AE074 /* SignUpViewController.xib */,
 				3D8FBFE1225A8F93005AE074 /* SignUpViewController.swift */,
+				3D2CF5E9225E8ADB00C5588C /* SignInViewController.swift */,
+				3D2CF5EA225E8ADB00C5588C /* SignInViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,7 +193,6 @@
 				6EE8C07B7FCD5901E5140C76 /* Pods-SpareServiceUITests.debug.xcconfig */,
 				A4BAA44063C7F7A2C5286149 /* Pods-SpareServiceUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -299,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2CF5EC225E8ADB00C5588C /* SignInViewController.xib in Resources */,
 				3D3FE75C225A6A2500A61995 /* LaunchScreen.storyboard in Resources */,
 				3D3FE759225A6A2500A61995 /* Assets.xcassets in Resources */,
 				3D8FBFE4225A8F93005AE074 /* SignUpViewController.xib in Resources */,
@@ -421,6 +427,7 @@
 				3D3FE757225A6A2400A61995 /* SpareService.xcdatamodeld in Sources */,
 				3D3FE74F225A6A2400A61995 /* AppDelegate.swift in Sources */,
 				3D8FBFE3225A8F93005AE074 /* SignUpViewController.swift in Sources */,
+				3D2CF5EB225E8ADB00C5588C /* SignInViewController.swift in Sources */,
 				3D8FBFDF225A7297005AE074 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,6 +30,9 @@
                     <state key="normal" title="sign up">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
+                    <connections>
+                        <action selector="SignIn:" destination="-1" eventType="touchUpInside" id="1tW-5E-4Z4"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HSP-No-sDr">
                     <rect key="frame" x="512" y="1231.5" width="512" height="134.5"/>
@@ -38,6 +41,9 @@
                     <state key="normal" title="sign In">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="signUp:" destination="-1" eventType="touchUpInside" id="0my-1N-0Aw"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

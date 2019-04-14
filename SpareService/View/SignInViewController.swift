@@ -1,21 +1,20 @@
 //
-//  SignUpViewController.swift
+//  SignInViewController.swift
 //  SpareService
 //
-//  Created by oualiken ourdia on 07/04/2019.
+//  Created by oualiken ourdia on 10/04/2019.
 //  Copyright © 2019 oualiken ourdia. All rights reserved.
 //
 
 import UIKit
 
-class SignUpViewController: UIViewController {
+class SignInViewController: UIViewController {
     
-    class func newInstance() -> SignUpViewController {
+    class func newInstance() -> SignInViewController {
         
-        let mlvc = SignUpViewController()
+        let mlvc = SignInViewController()
         return mlvc
     }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
