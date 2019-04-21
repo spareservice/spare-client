@@ -23,8 +23,7 @@ class HomeViewController: UIViewController {
     }
 
     @IBAction func signUp(_ sender: UIButton) {
-       // let next = LoginViewController.newInstance()
-      //  self.navigationController?.pushViewController(next, animated: true)
+    
          let next = SignUpViewController.newInstance()
          self.navigationController?.pushViewController(next, animated: true)
         

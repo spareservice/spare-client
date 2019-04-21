@@ -10,19 +10,31 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
-    class func newInstance() -> SignUpViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
+    }
+    
+    class func newInstance() -> SignUpViewController {
         let mlvc = SignUpViewController()
         return mlvc
     }
     
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBAction func inscription(_ sender: UIButton) {
+        let next = SignInViewController.newInstance()
+        self.navigationController?.pushViewController(next, animated: true)
     }
-
+  
+ 
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        
+        
+    }
+    
 
     /*
     // MARK: - Navigation
