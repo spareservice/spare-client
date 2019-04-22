@@ -27,7 +27,7 @@
                     <rect key="frame" x="0.0" y="1231.5" width="512" height="134.5"/>
                     <color key="backgroundColor" red="0.11796983483078449" green="0.62757664223007747" blue="0.0096583300164763027" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                    <state key="normal" title="Connection">
+                    <state key="normal" title="Connexion">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                     <connections>

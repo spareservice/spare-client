@@ -27,10 +27,10 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zws-e4-7SQ">
-                                <rect key="frame" x="342.5" y="533.5" width="339" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zws-e4-7SQ" userLabel="Trouvez les meilleurs experts autour de vous.">
+                                <rect key="frame" x="337" y="533.5" width="350" height="21"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Trouvez les meilleurs exerts autour de vous. ">
+                                    <fragment content="Trouvez les meilleurs experts autour de vous. ">
                                         <attributes>
                                             <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <font key="NSFont" metaFont="system" size="17"/>

@@ -10,6 +10,11 @@ import UIKit
 
 class SignUpViewController: UIViewController {
     
+    @IBOutlet var nomTextField: UITextField!
+    @IBOutlet var prenomTextField: UITextField!
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var mdpTextField: UITextField!
+    @IBOutlet var telTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,8 +26,16 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func inscription(_ sender: UIButton) {
+        
         let next = SignInViewController.newInstance()
-        self.navigationController?.pushViewController(next, animated: true)
+        if(!nomTextField.text!.isEmpty && !prenomTextField.text!.isEmpty && !emailTextField.text!.isEmpty && !mdpTextField.text!.isEmpty && !telTextField.text!.isEmpty){
+            SpareServiceServices.default.addClientDetail(nom: nomTextField.text!, prenom: prenomTextField.text!, email: emailTextField.text!, mdp: mdpTextField.text!, tel: telTextField.text!, completion: { resp in
+                
+                print(resp)
+            })
+            self.navigationController?.pushViewController(next, animated: true)
+            
+        }
     }
   
  

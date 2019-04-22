@@ -10,6 +10,8 @@ import UIKit
 
 class SignInViewController: UIViewController {
     
+    @IBOutlet var emailTextField: UITextField!
+    @IBOutlet var mdpTextField: UITextField!
     class func newInstance() -> SignInViewController {
         
         let mlvc = SignInViewController()
@@ -25,7 +27,15 @@ class SignInViewController: UIViewController {
 
     @IBAction func connect(_ sender: Any) {
         let next = WelcomeViewController.newInstance()
-        self.navigationController?.pushViewController(next, animated: true)
+        
+        if(!emailTextField.text!.isEmpty && !mdpTextField.text!.isEmpty){
+            SpareServiceServices.default.getClientDetail(email: emailTextField.text!, mdp: mdpTextField.text!, completion: { resp in
+                
+                
+            })
+            self.navigationController?.pushViewController(next, animated: true)
+        }
+        
         
         
     }

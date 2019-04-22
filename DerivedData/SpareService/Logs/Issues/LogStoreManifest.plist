@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>5C4AEB7A-53F0-4C5C-8B35-1507BA1F3A96</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>5C4AEB7A-53F0-4C5C-8B35-1507BA1F3A96.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Pods-SpareService-aioojjbxydtpvbbtwljbtbwmhufv</string>
+			<key>timeStartedRecording</key>
+			<real>577617771.66658401</real>
+			<key>timeStoppedRecording</key>
+			<real>577617778.906744</real>
+			<key>title</key>
+			<string>Build target Pods-SpareService</string>
+			<key>uniqueIdentifier</key>
+			<string>5C4AEB7A-53F0-4C5C-8B35-1507BA1F3A96</string>
+		</dict>
+		<key>897F14B3-B878-40B3-97B8-99432F775592</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.framework</string>
+			<key>fileName</key>
+			<string>897F14B3-B878-40B3-97B8-99432F775592.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>signature</key>
+			<string>Alamofire-aioojjbxydtpvbbtwljbtbwmhufv</string>
+			<key>timeStartedRecording</key>
+			<real>577627021.03516603</real>
+			<key>timeStoppedRecording</key>
+			<real>577627021.16347802</real>
+			<key>title</key>
+			<string>Build target Alamofire</string>
+			<key>uniqueIdentifier</key>
+			<string>897F14B3-B878-40B3-97B8-99432F775592</string>
+		</dict>
+		<key>A589781B-B365-4668-BE78-B37D03A64D56</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>A589781B-B365-4668-BE78-B37D03A64D56.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>SpareService-ateslbcxmkmmvpdqbkchsezyqavo</string>
+			<key>timeStartedRecording</key>
+			<real>577645564.96107304</real>
+			<key>timeStoppedRecording</key>
+			<real>577645566.80188596</real>
+			<key>title</key>
+			<string>Build target SpareService</string>
+			<key>uniqueIdentifier</key>
+			<string>A589781B-B365-4668-BE78-B37D03A64D56</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>
