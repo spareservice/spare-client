@@ -22,6 +22,8 @@
 		3DFCB810226BD83100F6932A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */; };
 		3DFCB811226BD83100F6932A /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */; };
 		3F0A4568226DE01800678759 /* SpareServiceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A4567226DE01800678759 /* SpareServiceServices.swift */; };
+		3FDBE7C4226F358400D05F63 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBE7C2226F358400D05F63 /* ServiceCollectionViewCell.swift */; };
+		3FDBE7C5226F358400D05F63 /* ServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDBE7C3226F358400D05F63 /* ServiceCollectionViewCell.xib */; };
 		8D708820ABAD2EC596D7977D /* Pods_SpareService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B3EFA28D7DFC5D0C068A05 /* Pods_SpareService.framework */; };
 		AB6DC566B6413096CEFF4F6E /* Pods_SpareServiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B850B749729ABEAD3F2EF8 /* Pods_SpareServiceTests.framework */; };
 		CDBAA25A758417EC9DDD7040 /* Pods_SpareServiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB1C2D24250041279DC6629 /* Pods_SpareServiceUITests.framework */; };
@@ -67,6 +69,8 @@
 		3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		3F0A4567226DE01800678759 /* SpareServiceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareServiceServices.swift; sourceTree = "<group>"; };
+		3FDBE7C2226F358400D05F63 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
+		3FDBE7C3226F358400D05F63 /* ServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		6EE8C07B7FCD5901E5140C76 /* Pods-SpareServiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareServiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpareServiceUITests/Pods-SpareServiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		849196538A059F210CBEA8E1 /* Pods-SpareService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareService.release.xcconfig"; path = "Target Support Files/Pods-SpareService/Pods-SpareService.release.xcconfig"; sourceTree = "<group>"; };
 		85B3EFA28D7DFC5D0C068A05 /* Pods_SpareService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpareService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +182,8 @@
 				3D2CF5EA225E8ADB00C5588C /* SignInViewController.xib */,
 				3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */,
 				3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */,
+				3FDBE7C2226F358400D05F63 /* ServiceCollectionViewCell.swift */,
+				3FDBE7C3226F358400D05F63 /* ServiceCollectionViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -322,6 +328,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2CF5EC225E8ADB00C5588C /* SignInViewController.xib in Resources */,
+				3FDBE7C5226F358400D05F63 /* ServiceCollectionViewCell.xib in Resources */,
 				3D3FE75C225A6A2500A61995 /* LaunchScreen.storyboard in Resources */,
 				3D3FE759225A6A2500A61995 /* Assets.xcassets in Resources */,
 				3D8FBFE4225A8F93005AE074 /* SignUpViewController.xib in Resources */,
@@ -444,6 +451,7 @@
 			files = (
 				3D3FE757225A6A2400A61995 /* SpareService.xcdatamodeld in Sources */,
 				3D3FE74F225A6A2400A61995 /* AppDelegate.swift in Sources */,
+				3FDBE7C4226F358400D05F63 /* ServiceCollectionViewCell.swift in Sources */,
 				3F0A4568226DE01800678759 /* SpareServiceServices.swift in Sources */,
 				3D8FBFE3225A8F93005AE074 /* SignUpViewController.swift in Sources */,
 				3DFCB810226BD83100F6932A /* WelcomeViewController.swift in Sources */,

@@ -10,6 +10,7 @@ import UIKit
 
 class ServiceCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var title: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
