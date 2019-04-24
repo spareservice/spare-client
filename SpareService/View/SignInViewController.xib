@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="SpareService" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="BtM-vY-bR9" id="KZU-SG-BGc"/>
+                <outlet property="mdpTextField" destination="EUE-XV-qfE" id="0gX-ld-BzA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

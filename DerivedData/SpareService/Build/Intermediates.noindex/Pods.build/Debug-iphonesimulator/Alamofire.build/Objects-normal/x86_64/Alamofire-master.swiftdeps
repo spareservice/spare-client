@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "3d09c9318aad425105a5c6861f11c6da"
+build_time: [1555933338, 49892000]
+inputs:
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/AFError.swift": [1555923891, 472683037]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/Alamofire.swift": [1555923891, 473050827]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [1555923891, 473207327]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/MultipartFormData.swift": [1555923891, 473390921]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [1555923891, 473564818]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/Notifications.swift": [1555923891, 473682924]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/ParameterEncoding.swift": [1555923891, 473862968]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/Request.swift": [1555923891, 474079436]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/Response.swift": [1555923891, 474364647]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/ResponseSerialization.swift": [1555923891, 474674110]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/Result.swift": [1555923891, 474855819]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/ServerTrustPolicy.swift": [1555923891, 475021692]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/SessionDelegate.swift": [1555923891, 475272338]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/SessionManager.swift": [1555923891, 475615967]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/TaskDelegate.swift": [1555923891, 475844868]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/Timeline.swift": [1555923891, 476027758]
+  "/Users/dejalu/Desktop/spare-client/Pods/Alamofire/Source/Validation.swift": [1555923891, 476232957]

@@ -1,0 +1,10 @@
+version: "Apple Swift version 5.0.1 (swiftlang-1001.0.82.4 clang-1001.0.46.5)"
+options: "dd7121d8128654b262a1e2a288174802"
+build_time: [1555952764, 958214000]
+inputs:
+  "/Users/dejalu/Desktop/spare-client/SpareService/AppDelegate.swift": [1555923891, 486274580]
+  "/Users/dejalu/Desktop/spare-client/SpareService/Services/SpareServiceServices.swift": [1555952722, 914854129]
+  "/Users/dejalu/Desktop/spare-client/SpareService/View/SignUpViewController.swift": [1555949112, 11481038]
+  "/Users/dejalu/Desktop/spare-client/SpareService/View/WelcomeViewController.swift": [1555923891, 497200870]
+  "/Users/dejalu/Desktop/spare-client/SpareService/View/SignInViewController.swift": [1555952764, 893338895]
+  "/Users/dejalu/Desktop/spare-client/SpareService/View/HomeViewController.swift": [1555923891, 495949759]
