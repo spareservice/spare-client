@@ -17,7 +17,7 @@ public class SpareServiceServices {
     }
     
     public func addClientDetail(nom: String, prenom: String, email: String, mdp: String, tel: String, completion: @escaping ([[String:Any]])->Void) {
-        Alamofire.request("http://localhost:3000/\(nom)/\(prenom)/\(email)/\(mdp)/\(tel)/ajoutClient", method: .post, parameters: [:], encoding: JSONEncoding.default).responseJSON { (res) in
+        Alamofire.request("https://spare-api.herokuapp.com/\(nom)/\(prenom)/\(email)/\(mdp)/\(tel)/ajoutClient", method: .post, parameters: [:], encoding: JSONEncoding.default).responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else {return}
             
             completion(json)
@@ -25,21 +25,21 @@ public class SpareServiceServices {
     }
     
     public func getClientDetail(email: String, mdp: String, completion: @escaping ([[String:Any]])->Void) {
-        Alamofire.request("http://localhost:3000/\(email)/\(mdp)/connexionClient").responseJSON { (res) in
+        Alamofire.request("https://spare-api.herokuapp.com/\(email)/\(mdp)/connexionClient").responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else { return }
             completion(json)
         }
     }
     
     public func checkClient(email: String, completion: @escaping ([[String:Any]])->Void) {
-        Alamofire.request("http://localhost:3000/\(email)/checkClient").responseJSON { (res) in
+        Alamofire.request("https://spare-api.herokuapp.com/\(email)/checkClient").responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else { return }
             completion(json)
         }
     }
     
     public func getPrincipalServices(completion: @escaping ([String])->Void) {
-        Alamofire.request("http://localhost:3000/servicesPrincipaux").responseJSON { (res) in
+        Alamofire.request("https://spare-api.herokuapp.com/servicesPrincipaux").responseJSON { (res) in
             guard let json = res.value as? [String] else { return }
             completion(json)
         }
