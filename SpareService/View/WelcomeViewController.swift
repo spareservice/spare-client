@@ -10,32 +10,48 @@ import UIKit
 
 class WelcomeViewController: UIViewController {
  
-    
+    var services : [String] = []
 
-    @IBOutlet var maison: UIButton!
     @IBOutlet var transport: UIView!
-    @IBOutlet var aide: UIButton!
-    @IBOutlet var reparationDeVihicule: UIButton!
-    @IBOutlet var jardin: UIButton!
-    @IBOutlet var soinsDucorp: UIButton!
-    class func newInstance() -> WelcomeViewController {
-        let mlvc = WelcomeViewController()
-        return mlvc
+    @IBOutlet var serviceSearchBar: UISearchBar!
+    @IBOutlet var serviceCollectionView: UICollectionView!
+    
+    
+    class func newInstance(services : [String]) -> WelcomeViewController {
+        let wvc = WelcomeViewController()
+        wvc.services = services
+        return wvc
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        jardin.backgroundColor = .clear
-        jardin.layer.cornerRadius = 5
-        jardin.layer.borderWidth = 1
-        jardin.layer.borderColor = UIColor.black.cgColor
-        
-        
-      
+        self.navigationItem.hidesBackButton = true
+        self.serviceCollectionView.delegate = self
+        self.serviceCollectionView.dataSource = self
+        self.serviceCollectionView.register(UINib(nibName: "ServiceCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: WelcomeViewController.servicesCellId)
         
     }
 
-  
 
+}
 
+extension WelcomeViewController: UICollectionViewDelegate {
+    
+}
+
+extension WelcomeViewController: UICollectionViewDataSource {
+    
+    public static let servicesCellId = "SERVICE_CELL_ID"
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.services.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: WelcomeViewController.servicesCellId, for: indexPath) as! ServiceCollectionViewCell
+        cell.title.text = "\(services[indexPath.row])"
+        return cell
+    }
+    
+    
 }

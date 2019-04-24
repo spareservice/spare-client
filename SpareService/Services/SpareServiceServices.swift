@@ -16,17 +16,32 @@ public class SpareServiceServices {
         
     }
     
-    public func addClientDetail(nom: String, prenom: String, email: String, mdp: String, tel: String, completion: @escaping ( DataResponse<Any>)->Void) {
-        Alamofire.request("http://localhost:3000/\(nom)/\(prenom)/\(email)/\(mdp)/\(tel)/ajoutClient", method: .post, parameters: [:], encoding: JSONEncoding.default).responseJSON { (res) in
-            print(res)
-            completion(res)
+    public func addClientDetail(nom: String, prenom: String, email: String, mdp: String, tel: String, completion: @escaping ([[String:Any]])->Void) {
+        Alamofire.request("https://spare-api.herokuapp.com/\(nom)/\(prenom)/\(email)/\(mdp)/\(tel)/ajoutClient", method: .post, parameters: [:], encoding: JSONEncoding.default).responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else {return}
+            
+            completion(json)
         }
     }
     
-    public func getClientDetail(email: String, mdp: String, completion: @escaping ( DataResponse<Any>)->Void) {
-        Alamofire.request("http://localhost:3000/\(email)/\(mdp)/connexionClient", method: .get, encoding: JSONEncoding.default).responseJSON { (res) in
-            print(res)
-            completion(res)
+    public func getClientDetail(email: String, mdp: String, completion: @escaping ([[String:Any]])->Void) {
+        Alamofire.request("https://spare-api.herokuapp.com/\(email)/\(mdp)/connexionClient").responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
+    
+    public func checkClient(email: String, completion: @escaping ([[String:Any]])->Void) {
+        Alamofire.request("https://spare-api.herokuapp.com/\(email)/checkClient").responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
+    
+    public func getPrincipalServices(completion: @escaping ([String])->Void) {
+        Alamofire.request("https://spare-api.herokuapp.com/servicesPrincipaux").responseJSON { (res) in
+            guard let json = res.value as? [String] else { return }
+            completion(json)
         }
     }
 }
