@@ -44,4 +44,14 @@ public class SpareServiceServices {
             completion(json)
         }
     }
+    
+    public func getServices(type: String, completion: @escaping ([[String:Any]])->Void) {
+        let params = [
+            "type" : type
+        ]
+        Alamofire.request("https://spare-api.herokuapp.com/services", parameters : params).responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
 }

@@ -22,6 +22,10 @@
 		3DFCB810226BD83100F6932A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */; };
 		3DFCB811226BD83100F6932A /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */; };
 		3F0A4568226DE01800678759 /* SpareServiceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A4567226DE01800678759 /* SpareServiceServices.swift */; };
+		3F907690227332B2004BB09C /* SubServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F90768E227332B2004BB09C /* SubServicesViewController.swift */; };
+		3F907691227332B2004BB09C /* SubServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F90768F227332B2004BB09C /* SubServicesViewController.xib */; };
+		3F907694227339F2004BB09C /* SubServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F907692227339F2004BB09C /* SubServicesTableViewCell.swift */; };
+		3F907695227339F2004BB09C /* SubServicesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F907693227339F2004BB09C /* SubServicesTableViewCell.xib */; };
 		3FDBE7C4226F358400D05F63 /* ServiceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDBE7C2226F358400D05F63 /* ServiceCollectionViewCell.swift */; };
 		3FDBE7C5226F358400D05F63 /* ServiceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FDBE7C3226F358400D05F63 /* ServiceCollectionViewCell.xib */; };
 		8D708820ABAD2EC596D7977D /* Pods_SpareService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85B3EFA28D7DFC5D0C068A05 /* Pods_SpareService.framework */; };
@@ -69,6 +73,10 @@
 		3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		3F0A4567226DE01800678759 /* SpareServiceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareServiceServices.swift; sourceTree = "<group>"; };
+		3F90768E227332B2004BB09C /* SubServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubServicesViewController.swift; sourceTree = "<group>"; };
+		3F90768F227332B2004BB09C /* SubServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubServicesViewController.xib; sourceTree = "<group>"; };
+		3F907692227339F2004BB09C /* SubServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubServicesTableViewCell.swift; sourceTree = "<group>"; };
+		3F907693227339F2004BB09C /* SubServicesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubServicesTableViewCell.xib; sourceTree = "<group>"; };
 		3FDBE7C2226F358400D05F63 /* ServiceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollectionViewCell.swift; sourceTree = "<group>"; };
 		3FDBE7C3226F358400D05F63 /* ServiceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCollectionViewCell.xib; sourceTree = "<group>"; };
 		6EE8C07B7FCD5901E5140C76 /* Pods-SpareServiceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareServiceUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpareServiceUITests/Pods-SpareServiceUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -184,6 +192,10 @@
 				3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */,
 				3FDBE7C2226F358400D05F63 /* ServiceCollectionViewCell.swift */,
 				3FDBE7C3226F358400D05F63 /* ServiceCollectionViewCell.xib */,
+				3F90768E227332B2004BB09C /* SubServicesViewController.swift */,
+				3F90768F227332B2004BB09C /* SubServicesViewController.xib */,
+				3F907692227339F2004BB09C /* SubServicesTableViewCell.swift */,
+				3F907693227339F2004BB09C /* SubServicesTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,6 +342,8 @@
 				3D2CF5EC225E8ADB00C5588C /* SignInViewController.xib in Resources */,
 				3FDBE7C5226F358400D05F63 /* ServiceCollectionViewCell.xib in Resources */,
 				3D3FE75C225A6A2500A61995 /* LaunchScreen.storyboard in Resources */,
+				3F907695227339F2004BB09C /* SubServicesTableViewCell.xib in Resources */,
+				3F907691227332B2004BB09C /* SubServicesViewController.xib in Resources */,
 				3D3FE759225A6A2500A61995 /* Assets.xcassets in Resources */,
 				3D8FBFE4225A8F93005AE074 /* SignUpViewController.xib in Resources */,
 				3D8FBFE0225A7297005AE074 /* HomeViewController.xib in Resources */,
@@ -449,9 +463,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F907694227339F2004BB09C /* SubServicesTableViewCell.swift in Sources */,
 				3D3FE757225A6A2400A61995 /* SpareService.xcdatamodeld in Sources */,
 				3D3FE74F225A6A2400A61995 /* AppDelegate.swift in Sources */,
 				3FDBE7C4226F358400D05F63 /* ServiceCollectionViewCell.swift in Sources */,
+				3F907690227332B2004BB09C /* SubServicesViewController.swift in Sources */,
 				3F0A4568226DE01800678759 /* SpareServiceServices.swift in Sources */,
 				3D8FBFE3225A8F93005AE074 /* SignUpViewController.swift in Sources */,
 				3DFCB810226BD83100F6932A /* WelcomeViewController.swift in Sources */,
