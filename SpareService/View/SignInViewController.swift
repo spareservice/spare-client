@@ -39,6 +39,7 @@ class SignInViewController: UIViewController {
                         let prenom = resp[0]["prenom"] as? String else {return}
                     SpareServiceServices.default.getPrincipalServices(completion: {res in
                         res.forEach{ (response) in
+                            print(response)
                             self.services.append(response)
                         }
                         let next = WelcomeViewController.newInstance(services: self.services)

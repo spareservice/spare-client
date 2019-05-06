@@ -53,5 +53,19 @@ extension WelcomeViewController: UICollectionViewDataSource {
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let serviceChoosen = services[indexPath.row]
+        var servicesArrayName : [String] = []
+        SpareServiceServices.default.getServices(type: serviceChoosen, completion: { res in
+            res.forEach{ x in
+                guard let serviceAdded = x["nomService"] as? String else { return }
+                servicesArrayName.append(serviceAdded)
+            }
+            print(servicesArrayName)
+            let next = SubServicesViewController.newInstance(subServices: servicesArrayName, serviceName: serviceChoosen)
+            self.navigationController?.pushViewController(next, animated: true)
+        })
+    }
+    
     
 }
