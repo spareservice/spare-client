@@ -65,5 +65,10 @@ extension SubServicesViewController: UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let subServiceChoosen = subServices[indexPath.row]
+        let next = DescriptionServiceViewController.newInstance(serviceName: serviceName, subServiceName: subServiceChoosen)
+        self.navigationController?.pushViewController(next, animated: true)
+    }
     
 }
