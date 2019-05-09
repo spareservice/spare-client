@@ -10,15 +10,17 @@ import UIKit
 
 class SubServicesViewController: UIViewController {
 
+    var email : String = ""
     var subServices : [String] = []
     var serviceName : String = ""
     @IBOutlet var serviceNameLabel: UILabel!
     @IBOutlet var subServiceTableView: UITableView!
     
-    class func newInstance(subServices : [String], serviceName : String) -> SubServicesViewController {
+    class func newInstance(email: String, subServices : [String], serviceName : String) -> SubServicesViewController {
         let ssvc = SubServicesViewController()
         ssvc.subServices = subServices
         ssvc.serviceName = serviceName
+        ssvc.email = email
         return ssvc
     }
     
@@ -67,7 +69,7 @@ extension SubServicesViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let subServiceChoosen = subServices[indexPath.row]
-        let next = DescriptionServiceViewController.newInstance(serviceName: serviceName, subServiceName: subServiceChoosen)
+        let next = DescriptionServiceViewController.newInstance(email: email, serviceName: serviceName, subServiceName: subServiceChoosen)
         self.navigationController?.pushViewController(next, animated: true)
     }
     

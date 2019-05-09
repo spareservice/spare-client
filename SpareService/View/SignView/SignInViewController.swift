@@ -42,7 +42,7 @@ class SignInViewController: UIViewController {
                             print(response)
                             self.services.append(response)
                         }
-                        let next = WelcomeViewController.newInstance(services: self.services)
+                        let next = WelcomeViewController.newInstance(email: self.emailTextField.text!, services: self.services)
                         self.navigationController?.pushViewController(next, animated: true)
                     })
                     
