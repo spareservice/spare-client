@@ -54,4 +54,19 @@ public class SpareServiceServices {
             completion(json)
         }
     }
+    
+    public func addAnnonce(email: String, serviceName: String, subServiceName: String, serviceDescription: String, serviceAdresse: String, completion: @escaping([[String:Any]])->Void) {
+        let params = [
+            "email" : email,
+            "serviceName" : serviceName,
+            "subServiceName" : subServiceName,
+            "serviceDescription" : serviceDescription,
+            "serviceAdresse" : serviceAdresse
+        ]
+        Alamofire.request("https://spare-api.herokuapp.com/ajoutAnnonce", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else {return}
+            
+            completion(json)
+        }
+    }
 }

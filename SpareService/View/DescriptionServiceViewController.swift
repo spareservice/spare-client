@@ -10,6 +10,7 @@ import UIKit
 
 class DescriptionServiceViewController: UIViewController {
 
+    var email : String = ""
     var subServiceName : String = ""
     var serviceName : String = ""
     
@@ -17,10 +18,11 @@ class DescriptionServiceViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
     
-    class func newInstance(serviceName : String, subServiceName : String) -> DescriptionServiceViewController {
+    class func newInstance(email: String, serviceName : String, subServiceName : String) -> DescriptionServiceViewController {
         let wvc = DescriptionServiceViewController()
         wvc.serviceName = serviceName
         wvc.subServiceName = subServiceName
+        wvc.email = email
         return wvc
     }
     
@@ -36,6 +38,8 @@ class DescriptionServiceViewController: UIViewController {
 
     @IBAction func confirmBtn(_ sender: UIButton) {
         print(descriptionTextView.text!)
+        let next = DetailAnnonceViewController.newInstance(email : email, serviceName: serviceName, subServiceName: subServiceName, serviceDescription: descriptionTextView.text!)
+        self.navigationController?.pushViewController(next, animated: true)
     }
     
     

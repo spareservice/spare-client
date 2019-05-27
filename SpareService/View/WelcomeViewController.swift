@@ -11,15 +11,17 @@ import UIKit
 class WelcomeViewController: UIViewController {
  
     var services : [String] = []
+    var email : String = ""
 
     @IBOutlet var transport: UIView!
     @IBOutlet var serviceSearchBar: UISearchBar!
     @IBOutlet var serviceCollectionView: UICollectionView!
     
     
-    class func newInstance(services : [String]) -> WelcomeViewController {
+    class func newInstance(email: String, services : [String]) -> WelcomeViewController {
         let wvc = WelcomeViewController()
         wvc.services = services
+        wvc.email = email
         return wvc
     }
     
@@ -62,7 +64,7 @@ extension WelcomeViewController: UICollectionViewDataSource {
                 servicesArrayName.append(serviceAdded)
             }
             print(servicesArrayName)
-            let next = SubServicesViewController.newInstance(subServices: servicesArrayName, serviceName: serviceChoosen)
+            let next = SubServicesViewController.newInstance(email: self.email, subServices: servicesArrayName, serviceName: serviceChoosen)
             self.navigationController?.pushViewController(next, animated: true)
         })
     }

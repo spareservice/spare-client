@@ -14,6 +14,12 @@ class DetailMissionViewController: UIViewController {
     var serviceName : String = ""
     var serviceDescription : String = ""
     
+    @IBOutlet weak var serviceNameLabel: UILabel!
+    @IBOutlet weak var serviceDescriptionTextView: UITextView!
+    @IBOutlet weak var lieuInterventionLabel: UILabel!
+    @IBOutlet weak var adresseTextField: UITextField!
+    @IBOutlet weak var codePostalTextField: UITextField!
+    @IBOutlet weak var villeTextField: UITextField!
     class func newInstance(serviceName : String, subServiceName : String, serviceDescription : String) -> DetailMissionViewController {
         let wvc = DetailMissionViewController()
         wvc.serviceName = serviceName
@@ -24,11 +30,19 @@ class DetailMissionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        serviceNameLabel.text = "\(serviceName)\n\(subServiceName)"
+        serviceDescriptionTextView.text = serviceDescription
+        lieuInterventionLabel.text = "Indiquer le lieu d'intervention"
+        serviceDescriptionTextView.isEditable = false
+        serviceDescriptionTextView.layer.borderWidth = 1
+        serviceDescriptionTextView.layer.borderColor = UIColor.gray.cgColor
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func finaliserBtn(_ sender: UIButton) {
+        
+    }
+    
     /*
     // MARK: - Navigation
 
