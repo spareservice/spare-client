@@ -16,8 +16,7 @@ class WelcomeViewController: UIViewController {
     @IBOutlet var transport: UIView!
     @IBOutlet var serviceSearchBar: UISearchBar!
     @IBOutlet var serviceCollectionView: UICollectionView!
-    
-    
+        
     class func newInstance(email: String, services : [String]) -> WelcomeViewController {
         let wvc = WelcomeViewController()
         wvc.services = services

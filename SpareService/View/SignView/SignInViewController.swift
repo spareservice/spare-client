@@ -29,11 +29,11 @@ class SignInViewController: UIViewController {
     }
 
 
-    @IBAction func connect(_ sender: Any) {
-        
-        
+    @IBAction func connect(_ sender: UIButton) {
         if(!emailTextField.text!.isEmpty && !mdpTextField.text!.isEmpty){
+            sender.isUserInteractionEnabled = false;
             SpareServiceServices.default.getClientDetail(email: emailTextField.text!, mdp: mdpTextField.text!, completion: { resp in
+                sender.isUserInteractionEnabled = true;
                 if(resp.count != 0) {
                     guard let nom = resp[0]["nom"] as? String,
                         let prenom = resp[0]["prenom"] as? String else {return}
@@ -42,7 +42,7 @@ class SignInViewController: UIViewController {
                             print(response)
                             self.services.append(response)
                         }
-                        let next = WelcomeViewController.newInstance(email: self.emailTextField.text!, services: self.services)
+                        let next = SpareTabBarController.newInstance(email: self.emailTextField.text!, services: self.services)
                         self.navigationController?.pushViewController(next, animated: true)
                     })
                     

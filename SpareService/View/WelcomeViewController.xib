@@ -33,24 +33,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WcK-RG-ybw">
-                    <rect key="frame" x="0.0" y="974" width="768" height="50"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="Oha-xV-Vh0"/>
-                    </constraints>
-                    <items>
-                        <tabBarItem title="Accueil" id="sQY-eX-pUm">
-                            <color key="badgeColor" red="0.12752640060000001" green="0.1257995449" blue="0.73285484219999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </tabBarItem>
-                        <tabBarItem title="Contact" selectedImage="contact" id="syE-NK-Mxd"/>
-                        <tabBarItem title="Activité" id="BVb-MX-glM"/>
-                        <tabBarItem title="Moi" id="rb6-cH-48e"/>
-                    </items>
-                    <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                </tabBar>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2L3-sL-O2v">
-                    <rect key="frame" x="0.0" y="190" width="768" height="644"/>
+                    <rect key="frame" x="0.0" y="190" width="768" height="834"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gcj-iT-TJg">
                         <size key="itemSize" width="400" height="400"/>
@@ -62,7 +46,6 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="WcK-RG-ybw" firstAttribute="top" secondItem="2L3-sL-O2v" secondAttribute="bottom" constant="140" id="0Dy-B3-N79"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K01-jI-oUU" secondAttribute="trailing" id="1C7-73-jWN"/>
                 <constraint firstItem="GNg-od-JqA" firstAttribute="top" secondItem="K01-jI-oUU" secondAttribute="bottom" constant="20" id="7Jd-NW-W5x"/>
                 <constraint firstItem="GNg-od-JqA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="DJR-QX-7iE"/>
@@ -70,18 +53,13 @@
                 <constraint firstItem="K01-jI-oUU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="FfP-Jx-Q9h"/>
                 <constraint firstItem="GNg-od-JqA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KQE-Tf-IOW"/>
                 <constraint firstItem="K01-jI-oUU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OUd-qq-CqW"/>
-                <constraint firstAttribute="trailing" secondItem="WcK-RG-ybw" secondAttribute="trailing" id="Yhy-0M-ZXP"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="WcK-RG-ybw" secondAttribute="bottom" id="afF-9O-djU"/>
                 <constraint firstItem="2L3-sL-O2v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cFy-OL-Kna"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2L3-sL-O2v" secondAttribute="trailing" id="jL0-4s-6SC"/>
-                <constraint firstItem="WcK-RG-ybw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="k8H-Zj-mQN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2L3-sL-O2v" secondAttribute="bottom" id="s2w-mG-u1W"/>
                 <constraint firstItem="2L3-sL-O2v" firstAttribute="top" secondItem="GNg-od-JqA" secondAttribute="bottom" constant="54" id="vd2-Kb-ec8"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="138.28125" y="80.859375"/>
         </view>
     </objects>
-    <resources>
-        <image name="contact" width="512" height="512"/>
-    </resources>
 </document>
