@@ -23,19 +23,19 @@
             <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BtM-vY-bR9">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BtM-vY-bR9">
                     <rect key="frame" x="0.0" y="277" width="834" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Connecter vous " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDN-hb-0y8">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connecter vous " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDN-hb-0y8">
                     <rect key="frame" x="354.5" y="220" width="125.5" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2F-8t-PO1">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2F-8t-PO1">
                     <rect key="frame" x="300" y="801" width="234" height="30"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <size key="titleShadowOffset" width="1000" height="700"/>
@@ -44,21 +44,18 @@
                         <action selector="connect:" destination="-1" eventType="touchUpInside" id="pjC-Mw-tuJ"/>
                     </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQ6-Bt-sM7">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zQ6-Bt-sM7">
                     <rect key="frame" x="0.0" y="910" width="834" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mots de passe " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUE-XV-qfE">
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mots de passe " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUE-XV-qfE">
                     <rect key="frame" x="0.0" y="364" width="834" height="30"/>
                     <nil key="textColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="spareservicelogomini" translatesAutoresizingMaskIntoConstraints="NO" id="YcF-Lo-THK">
-                    <rect key="frame" x="50" y="440" width="734" height="319"/>
-                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -68,15 +65,10 @@
                 <constraint firstItem="t2F-8t-PO1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="300" id="8OM-3p-1dR"/>
                 <constraint firstItem="SDN-hb-0y8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="EPm-0b-QHV"/>
                 <constraint firstItem="EUE-XV-qfE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JNy-7p-UFp"/>
-                <constraint firstItem="YcF-Lo-THK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JVS-XV-ccj"/>
                 <constraint firstItem="zQ6-Bt-sM7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="M29-oG-hYj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EUE-XV-qfE" secondAttribute="trailing" id="Psf-iK-oe9"/>
                 <constraint firstItem="BtM-vY-bR9" firstAttribute="top" secondItem="SDN-hb-0y8" secondAttribute="bottom" constant="36" id="RRx-cW-OSO"/>
-                <constraint firstItem="t2F-8t-PO1" firstAttribute="top" secondItem="YcF-Lo-THK" secondAttribute="bottom" constant="42" id="c5Q-dy-A5S"/>
                 <constraint firstItem="SDN-hb-0y8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="dbo-g2-K4c"/>
-                <constraint firstItem="YcF-Lo-THK" firstAttribute="top" secondItem="EUE-XV-qfE" secondAttribute="bottom" constant="46" id="jQI-LH-cay"/>
-                <constraint firstAttribute="trailing" secondItem="YcF-Lo-THK" secondAttribute="trailing" constant="50" id="nNq-2J-vov"/>
-                <constraint firstItem="YcF-Lo-THK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="o9z-qd-0EX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="t2F-8t-PO1" secondAttribute="trailing" constant="300" id="sU8-dH-gjt"/>
                 <constraint firstItem="zQ6-Bt-sM7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="t7V-3P-etk"/>
                 <constraint firstItem="EUE-XV-qfE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="tJa-ts-bgH"/>
@@ -90,7 +82,4 @@
             <point key="canvasLocation" x="-194.24460431654677" y="20.50359712230216"/>
         </view>
     </objects>
-    <resources>
-        <image name="spareservicelogomini" width="2480" height="3507"/>
-    </resources>
 </document>
