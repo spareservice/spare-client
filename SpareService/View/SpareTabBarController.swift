@@ -14,17 +14,29 @@ class SpareTabBarController: UITabBarController {
         let controller = SpareTabBarController();
         
         let welcomeNavigation = UINavigationController(rootViewController: WelcomeViewController.newInstance(email: email, services: services))
+        
         let activityNavigation = UINavigationController(rootViewController: MyActiviteViewController())
+        let contactNavigation = UINavigationController(rootViewController: ContactViewController())
+        let profileNavigation = UINavigationController(rootViewController: ProfileViewController())
         
         controller.tabBar.tintColor = .red
         
         welcomeNavigation.tabBarItem.title = "Home"
         activityNavigation.tabBarItem.title = "Activité"
+        contactNavigation.tabBarItem.title = "contact"
+        profileNavigation.tabBarItem.title = "profile"
         activityNavigation.tabBarItem.image = UIImage(named: "briefcase")
-
+        welcomeNavigation.tabBarItem.image = UIImage(named: "home")
+        contactNavigation.tabBarItem.image = UIImage(named: "сontacts")
+        profileNavigation.tabBarItem.image = UIImage(named: "user")
+        
+        
         controller.setViewControllers([
             welcomeNavigation,
-            activityNavigation
+            activityNavigation,
+            contactNavigation,
+            profileNavigation
+            
             ], animated: false)
         
         return controller

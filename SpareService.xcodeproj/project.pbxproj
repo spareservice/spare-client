@@ -24,13 +24,13 @@
 		3D8FBFE4225A8F93005AE074 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8FBFE2225A8F93005AE074 /* SignUpViewController.xib */; };
 		3D90FF30229D674400168AAB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90FF2E229D674400168AAB /* ProfileViewController.swift */; };
 		3D90FF31229D674400168AAB /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D90FF2F229D674400168AAB /* ProfileViewController.xib */; };
-		3D90FF34229D676200168AAB /* MyActiviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90FF32229D676200168AAB /* MyActiviteViewController.swift */; };
-		3D90FF35229D676200168AAB /* MyActiviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D90FF33229D676200168AAB /* MyActiviteViewController.xib */; };
 		3D90FF38229DA84E00168AAB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90FF36229DA84E00168AAB /* ContactViewController.swift */; };
 		3D90FF39229DA84E00168AAB /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D90FF37229DA84E00168AAB /* ContactViewController.xib */; };
 		3D90FF3D229DAF7E00168AAB /* SpareTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90FF3C229DAF7E00168AAB /* SpareTabBarController.swift */; };
 		3D90FF41229DE62B00168AAB /* home.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3D90FF40229DE62B00168AAB /* home.svg */; };
 		3D90FF43229DEB1400168AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D90FF42229DEB1400168AAB /* Assets.xcassets */; };
+		3DD31671229EE5E100F7CB7C /* MyActiviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3166F229EE5E100F7CB7C /* MyActiviteViewController.swift */; };
+		3DD31672229EE5E100F7CB7C /* MyActiviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD31670229EE5E100F7CB7C /* MyActiviteViewController.xib */; };
 		3DFCB810226BD83100F6932A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */; };
 		3DFCB811226BD83100F6932A /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */; };
 		3F0A4568226DE01800678759 /* SpareServiceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0A4567226DE01800678759 /* SpareServiceServices.swift */; };
@@ -87,13 +87,13 @@
 		3D8FBFE2225A8F93005AE074 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
 		3D90FF2E229D674400168AAB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3D90FF2F229D674400168AAB /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		3D90FF32229D676200168AAB /* MyActiviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActiviteViewController.swift; sourceTree = "<group>"; };
-		3D90FF33229D676200168AAB /* MyActiviteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyActiviteViewController.xib; sourceTree = "<group>"; };
 		3D90FF36229DA84E00168AAB /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		3D90FF37229DA84E00168AAB /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
 		3D90FF3C229DAF7E00168AAB /* SpareTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareTabBarController.swift; sourceTree = "<group>"; };
 		3D90FF40229DE62B00168AAB /* home.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = home.svg; sourceTree = "<group>"; };
 		3D90FF42229DEB1400168AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DD3166F229EE5E100F7CB7C /* MyActiviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActiviteViewController.swift; sourceTree = "<group>"; };
+		3DD31670229EE5E100F7CB7C /* MyActiviteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyActiviteViewController.xib; sourceTree = "<group>"; };
 		3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		3F0A4567226DE01800678759 /* SpareServiceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareServiceServices.swift; sourceTree = "<group>"; };
@@ -226,8 +226,8 @@
 		3D3FE780225A6FE400A61995 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D83CE62229EE589008BFCB2 /* Activitéé */,
 				3D90FF2D229D66E000168AAB /* Contact */,
-				3D90FF2C229D66C700168AAB /* Activité */,
 				3D90FF2B229D66BA00168AAB /* Profile */,
 				3D3FE75A225A6A2500A61995 /* LaunchScreen.storyboard */,
 				0C7088592282C9B300269534 /* SignView */,
@@ -249,6 +249,16 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3D83CE62229EE589008BFCB2 /* Activitéé */ = {
+			isa = PBXGroup;
+			children = (
+				3DD3166F229EE5E100F7CB7C /* MyActiviteViewController.swift */,
+				3DD31670229EE5E100F7CB7C /* MyActiviteViewController.xib */,
+			);
+			name = "Activitéé";
+			path = "Activitéé";
+			sourceTree = "<group>";
+		};
 		3D90FF2B229D66BA00168AAB /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -256,16 +266,6 @@
 				3D90FF2F229D674400168AAB /* ProfileViewController.xib */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		3D90FF2C229D66C700168AAB /* Activité */ = {
-			isa = PBXGroup;
-			children = (
-				3D90FF32229D676200168AAB /* MyActiviteViewController.swift */,
-				3D90FF33229D676200168AAB /* MyActiviteViewController.xib */,
-			);
-			name = "Activité";
-			path = "Activité";
 			sourceTree = "<group>";
 		};
 		3D90FF2D229D66E000168AAB /* Contact */ = {
@@ -417,9 +417,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D90FF35229D676200168AAB /* MyActiviteViewController.xib in Resources */,
 				3D2CF5EC225E8ADB00C5588C /* SignInViewController.xib in Resources */,
 				0C61E9BB228066E500848C78 /* DescriptionServiceViewController.xib in Resources */,
+				3DD31672229EE5E100F7CB7C /* MyActiviteViewController.xib in Resources */,
 				3FDBE7C5226F358400D05F63 /* ServiceCollectionViewCell.xib in Resources */,
 				3D90FF43229DEB1400168AAB /* Assets.xcassets in Resources */,
 				3D3FE75C225A6A2500A61995 /* LaunchScreen.storyboard in Resources */,
@@ -554,8 +554,8 @@
 				3FDBE7C4226F358400D05F63 /* ServiceCollectionViewCell.swift in Sources */,
 				0C70885C2282CB3500269534 /* DetailAnnonceViewController.swift in Sources */,
 				3F907690227332B2004BB09C /* SubServicesViewController.swift in Sources */,
+				3DD31671229EE5E100F7CB7C /* MyActiviteViewController.swift in Sources */,
 				3F0A4568226DE01800678759 /* SpareServiceServices.swift in Sources */,
-				3D90FF34229D676200168AAB /* MyActiviteViewController.swift in Sources */,
 				0C61E9BA228066E500848C78 /* DescriptionServiceViewController.swift in Sources */,
 				3D8FBFE3225A8F93005AE074 /* SignUpViewController.swift in Sources */,
 				3DFCB810226BD83100F6932A /* WelcomeViewController.swift in Sources */,
