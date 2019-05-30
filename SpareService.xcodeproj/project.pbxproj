@@ -29,6 +29,11 @@
 		3D90FF3D229DAF7E00168AAB /* SpareTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D90FF3C229DAF7E00168AAB /* SpareTabBarController.swift */; };
 		3D90FF41229DE62B00168AAB /* home.svg in Resources */ = {isa = PBXBuildFile; fileRef = 3D90FF40229DE62B00168AAB /* home.svg */; };
 		3D90FF43229DEB1400168AAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D90FF42229DEB1400168AAB /* Assets.xcassets */; };
+		3DB42017229FF19B007A5B4C /* ProfilCellul.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB42015229FF19B007A5B4C /* ProfilCellul.swift */; };
+		3DB42018229FF19B007A5B4C /* ProfilCellul.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB42016229FF19B007A5B4C /* ProfilCellul.xib */; };
+		3DB4201A229FF328007A5B4C /* Profil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB42019229FF328007A5B4C /* Profil.swift */; };
+		3DB42021229FFA7D007A5B4C /* DetaillProfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB4201F229FFA7D007A5B4C /* DetaillProfil.swift */; };
+		3DB42022229FFA7D007A5B4C /* DetaillProfil.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DB42020229FFA7D007A5B4C /* DetaillProfil.xib */; };
 		3DD31671229EE5E100F7CB7C /* MyActiviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD3166F229EE5E100F7CB7C /* MyActiviteViewController.swift */; };
 		3DD31672229EE5E100F7CB7C /* MyActiviteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DD31670229EE5E100F7CB7C /* MyActiviteViewController.xib */; };
 		3DFCB810226BD83100F6932A /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */; };
@@ -92,6 +97,11 @@
 		3D90FF3C229DAF7E00168AAB /* SpareTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareTabBarController.swift; sourceTree = "<group>"; };
 		3D90FF40229DE62B00168AAB /* home.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = home.svg; sourceTree = "<group>"; };
 		3D90FF42229DEB1400168AAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB42015229FF19B007A5B4C /* ProfilCellul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilCellul.swift; sourceTree = "<group>"; };
+		3DB42016229FF19B007A5B4C /* ProfilCellul.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilCellul.xib; sourceTree = "<group>"; };
+		3DB42019229FF328007A5B4C /* Profil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Profil.swift; path = SpareService/View/Profile/Profil.swift; sourceTree = SOURCE_ROOT; };
+		3DB4201F229FFA7D007A5B4C /* DetaillProfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaillProfil.swift; sourceTree = "<group>"; };
+		3DB42020229FFA7D007A5B4C /* DetaillProfil.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetaillProfil.xib; sourceTree = "<group>"; };
 		3DD3166F229EE5E100F7CB7C /* MyActiviteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyActiviteViewController.swift; sourceTree = "<group>"; };
 		3DD31670229EE5E100F7CB7C /* MyActiviteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyActiviteViewController.xib; sourceTree = "<group>"; };
 		3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
@@ -219,6 +229,7 @@
 		3D3FE77F225A6FCA00A61995 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3DB42019229FF328007A5B4C /* Profil.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,6 +275,10 @@
 			children = (
 				3D90FF2E229D674400168AAB /* ProfileViewController.swift */,
 				3D90FF2F229D674400168AAB /* ProfileViewController.xib */,
+				3DB42015229FF19B007A5B4C /* ProfilCellul.swift */,
+				3DB42016229FF19B007A5B4C /* ProfilCellul.xib */,
+				3DB4201F229FFA7D007A5B4C /* DetaillProfil.swift */,
+				3DB42020229FFA7D007A5B4C /* DetaillProfil.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -427,10 +442,12 @@
 				3F907691227332B2004BB09C /* SubServicesViewController.xib in Resources */,
 				3D90FF41229DE62B00168AAB /* home.svg in Resources */,
 				3D90FF31229D674400168AAB /* ProfileViewController.xib in Resources */,
+				3DB42022229FFA7D007A5B4C /* DetaillProfil.xib in Resources */,
 				3D8FBFE4225A8F93005AE074 /* SignUpViewController.xib in Resources */,
 				0C70885D2282CB3500269534 /* DetailAnnonceViewController.xib in Resources */,
 				3D8FBFE0225A7297005AE074 /* HomeViewController.xib in Resources */,
 				3DFCB811226BD83100F6932A /* WelcomeViewController.xib in Resources */,
+				3DB42018229FF19B007A5B4C /* ProfilCellul.xib in Resources */,
 				3D90FF39229DA84E00168AAB /* ContactViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,12 +523,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SpareService/Pods-SpareService-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -552,7 +571,10 @@
 				3D3FE757225A6A2400A61995 /* SpareService.xcdatamodeld in Sources */,
 				3D3FE74F225A6A2400A61995 /* AppDelegate.swift in Sources */,
 				3FDBE7C4226F358400D05F63 /* ServiceCollectionViewCell.swift in Sources */,
+				3DB42017229FF19B007A5B4C /* ProfilCellul.swift in Sources */,
+				3DB42021229FFA7D007A5B4C /* DetaillProfil.swift in Sources */,
 				0C70885C2282CB3500269534 /* DetailAnnonceViewController.swift in Sources */,
+				3DB4201A229FF328007A5B4C /* Profil.swift in Sources */,
 				3F907690227332B2004BB09C /* SubServicesViewController.swift in Sources */,
 				3DD31671229EE5E100F7CB7C /* MyActiviteViewController.swift in Sources */,
 				3F0A4568226DE01800678759 /* SpareServiceServices.swift in Sources */,

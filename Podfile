@@ -7,6 +7,7 @@ target 'SpareService' do
 
   # Pods for SpareService
     pod 'Alamofire', '~> 4.8'
+     pod 'ObjectMapper'
 
   target 'SpareServiceTests' do
     inherit! :search_paths

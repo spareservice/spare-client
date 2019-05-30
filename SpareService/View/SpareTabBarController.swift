@@ -17,7 +17,7 @@ class SpareTabBarController: UITabBarController {
         
         let activityNavigation = UINavigationController(rootViewController: MyActiviteViewController())
         let contactNavigation = UINavigationController(rootViewController: ContactViewController())
-        let profileNavigation = UINavigationController(rootViewController: ProfileViewController())
+        let profileNavigation = UINavigationController(rootViewController: ProfileViewController.newInstance(profil: Profil(name: email)))
         
         controller.tabBar.tintColor = .red
         
