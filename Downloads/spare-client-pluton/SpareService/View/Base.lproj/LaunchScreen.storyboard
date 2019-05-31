@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Poster-People-Helping-People-2" translatesAutoresizingMaskIntoConstraints="NO" id="s18-zd-RnE">
+                                <rect key="frame" x="0.0" y="170" width="1024" height="202"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Spare Service " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcC-c5-wB2">
+                                <rect key="frame" x="431.5" y="422" width="161" height="32"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zws-e4-7SQ" userLabel="Trouvez les meilleurs experts autour de vous.">
+                                <rect key="frame" x="185.5" y="534" width="653" height="41"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Trouvez les meilleurs experts autour de vous. ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.028275697969543101" green="0.028275697969543101" blue="0.028275697969543101" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="34" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spareservicelogomini" translatesAutoresizingMaskIntoConstraints="NO" id="7Bo-tQ-VRt">
+                                <rect key="frame" x="392" y="760" width="248" height="301"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="301" id="Njh-dD-ft1"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.86736130266793365" blue="0.5489130560655946" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES"/>
+                            <bool key="isElement" value="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Bo-tQ-VRt" secondAttribute="bottom" constant="305" id="8s9-No-Agd"/>
+                            <constraint firstItem="Zws-e4-7SQ" firstAttribute="top" secondItem="qcC-c5-wB2" secondAttribute="bottom" constant="80" id="Ji3-3L-Bel"/>
+                            <constraint firstItem="s18-zd-RnE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="PzN-Xi-xXb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Bo-tQ-VRt" secondAttribute="trailing" constant="384" id="UPb-nG-Cn6"/>
+                            <constraint firstItem="7Bo-tQ-VRt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="392" id="Xws-U3-DI9"/>
+                            <constraint firstItem="Zws-e4-7SQ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gag-pT-L9w"/>
+                            <constraint firstItem="qcC-c5-wB2" firstAttribute="top" secondItem="s18-zd-RnE" secondAttribute="bottom" constant="50" id="keQ-dq-w5y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s18-zd-RnE" secondAttribute="trailing" id="kvO-Aa-ZPi"/>
+                            <constraint firstItem="s18-zd-RnE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="lng-Ep-cbw"/>
+                            <constraint firstItem="qcC-c5-wB2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="mQT-JO-8df"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.1484375" y="374.67057101024886"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Poster-People-Helping-People-2" width="525" height="202"/>
+        <image name="spareservicelogomini" width="2480" height="3507"/>
+    </resources>
+</document>

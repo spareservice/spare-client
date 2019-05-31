@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyActiviteViewController" customModule="SpareService" customModuleProvider="target">
+            <connections>
+                <outlet property="segmenControl" destination="M3z-jd-8Ge" id="5eN-lC-C9S"/>
+                <outlet property="textLabel" destination="MRi-ec-71w" id="ohI-LZ-cNa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="M3z-jd-8Ge">
+                    <rect key="frame" x="20" y="44" width="794" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="27" id="BgN-xL-lfH"/>
+                    </constraints>
+                    <segments>
+                        <segment title="En cour"/>
+                        <segment title="Résérvé"/>
+                    </segments>
+                    <color key="tintColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="indexChange:" destination="-1" eventType="valueChanged" id="GTe-5e-7Xx"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="vos demande publiéé apparaitron ici" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-ec-71w">
+                    <rect key="frame" x="190" y="115" width="533" height="134"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="21"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="M3z-jd-8Ge" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="0IP-qa-LkI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M3z-jd-8Ge" secondAttribute="trailing" constant="20" id="Jha-VV-tgN"/>
+                <constraint firstItem="M3z-jd-8Ge" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fwn-rm-fJ4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="46.762589928057558" y="26.633165829145728"/>
+        </view>
+    </objects>
+</document>

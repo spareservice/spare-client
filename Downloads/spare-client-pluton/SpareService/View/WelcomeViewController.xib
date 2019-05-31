@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="SpareService" customModuleProvider="target">
+            <connections>
+                <outlet property="serviceCollectionView" destination="2L3-sL-O2v" id="FSR-oV-eIC"/>
+                <outlet property="serviceSearchBar" destination="GNg-od-JqA" id="p5U-wV-9ET"/>
+                <outlet property="transport" destination="i5M-Pr-FkT" id="Rp3-kL-Ulb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="GNg-od-JqA">
+                    <rect key="frame" x="0.0" y="80" width="768" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quel Service recherchez vous ? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K01-jI-oUU">
+                    <rect key="frame" x="0.0" y="30" width="768" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2L3-sL-O2v">
+                    <rect key="frame" x="0.0" y="190" width="768" height="834"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gcj-iT-TJg">
+                        <size key="itemSize" width="400" height="400"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K01-jI-oUU" secondAttribute="trailing" id="1C7-73-jWN"/>
+                <constraint firstItem="GNg-od-JqA" firstAttribute="top" secondItem="K01-jI-oUU" secondAttribute="bottom" constant="20" id="7Jd-NW-W5x"/>
+                <constraint firstItem="GNg-od-JqA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="DJR-QX-7iE"/>
+                <constraint firstItem="K01-jI-oUU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DiP-aL-pcb"/>
+                <constraint firstItem="K01-jI-oUU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="FfP-Jx-Q9h"/>
+                <constraint firstItem="GNg-od-JqA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KQE-Tf-IOW"/>
+                <constraint firstItem="K01-jI-oUU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="OUd-qq-CqW"/>
+                <constraint firstItem="2L3-sL-O2v" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cFy-OL-Kna"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2L3-sL-O2v" secondAttribute="trailing" id="jL0-4s-6SC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2L3-sL-O2v" secondAttribute="bottom" id="s2w-mG-u1W"/>
+                <constraint firstItem="2L3-sL-O2v" firstAttribute="top" secondItem="GNg-od-JqA" secondAttribute="bottom" constant="54" id="vd2-Kb-ec8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.28125" y="80.859375"/>
+        </view>
+    </objects>
+</document>
