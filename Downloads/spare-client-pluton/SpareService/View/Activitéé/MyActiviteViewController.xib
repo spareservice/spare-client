@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyActiviteViewController" customModule="SpareService" customModuleProvider="target">
             <connections>
                 <outlet property="segmenControl" destination="M3z-jd-8Ge" id="5eN-lC-C9S"/>
+                <outlet property="tableView" destination="Nvc-FF-WU8" id="Xdr-jQ-Cv3"/>
                 <outlet property="textLabel" destination="MRi-ec-71w" id="ohI-LZ-cNa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -36,18 +37,31 @@
                         <action selector="indexChange:" destination="-1" eventType="valueChanged" id="GTe-5e-7Xx"/>
                     </connections>
                 </segmentedControl>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="vos demande publiéé apparaitron ici" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-ec-71w">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="vos demande publiéé apparaitron ici" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MRi-ec-71w">
                     <rect key="frame" x="190" y="115" width="533" height="134"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="134" id="D8f-fy-NRD"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="italicSystem" pointSize="21"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Nvc-FF-WU8">
+                    <rect key="frame" x="0.0" y="257" width="834" height="817"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="M3z-jd-8Ge" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="0IP-qa-LkI"/>
+                <constraint firstItem="Nvc-FF-WU8" firstAttribute="top" secondItem="MRi-ec-71w" secondAttribute="bottom" constant="8" id="3Sm-GY-Sfg"/>
+                <constraint firstItem="MRi-ec-71w" firstAttribute="top" secondItem="M3z-jd-8Ge" secondAttribute="bottom" constant="44" id="Btm-hk-teV"/>
+                <constraint firstItem="Nvc-FF-WU8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ga5-qG-H9Z"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Nvc-FF-WU8" secondAttribute="trailing" id="I4K-iV-mTo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M3z-jd-8Ge" secondAttribute="trailing" constant="20" id="Jha-VV-tgN"/>
+                <constraint firstItem="MRi-ec-71w" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="190" id="MMo-KJ-aLD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MRi-ec-71w" secondAttribute="trailing" constant="111" id="bcr-gi-wIP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Nvc-FF-WU8" secondAttribute="bottom" constant="100" id="dr7-Ee-xvr"/>
                 <constraint firstItem="M3z-jd-8Ge" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fwn-rm-fJ4"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

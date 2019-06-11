@@ -18,6 +18,8 @@
 		3D3FE75C225A6A2500A61995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FE75A225A6A2500A61995 /* LaunchScreen.storyboard */; };
 		3D3FE767225A6A2500A61995 /* SpareServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FE766225A6A2500A61995 /* SpareServiceTests.swift */; };
 		3D3FE772225A6A2500A61995 /* SpareServiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FE771225A6A2500A61995 /* SpareServiceUITests.swift */; };
+		3D8D9B7B22A9CAFA0063B1EC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8D9B7922A9CAFA0063B1EC /* TableViewCell.swift */; };
+		3D8D9B7C22A9CAFA0063B1EC /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8D9B7A22A9CAFA0063B1EC /* TableViewCell.xib */; };
 		3D8FBFDF225A7297005AE074 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FBFDD225A7297005AE074 /* HomeViewController.swift */; };
 		3D8FBFE0225A7297005AE074 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D8FBFDE225A7297005AE074 /* HomeViewController.xib */; };
 		3D8FBFE3225A8F93005AE074 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8FBFE1225A8F93005AE074 /* SignUpViewController.swift */; };
@@ -88,6 +90,8 @@
 		3D3FE76D225A6A2500A61995 /* SpareServiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpareServiceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3FE771225A6A2500A61995 /* SpareServiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareServiceUITests.swift; sourceTree = "<group>"; };
 		3D3FE773225A6A2500A61995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D8D9B7922A9CAFA0063B1EC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3D8D9B7A22A9CAFA0063B1EC /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		3D8FBFDD225A7297005AE074 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		3D8FBFDE225A7297005AE074 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HomeViewController.xib; path = ../HomeViewController.xib; sourceTree = "<group>"; };
 		3D8FBFE1225A8F93005AE074 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -261,6 +265,8 @@
 			children = (
 				3DD3166F229EE5E100F7CB7C /* MyActiviteViewController.swift */,
 				3DD31670229EE5E100F7CB7C /* MyActiviteViewController.xib */,
+				3D8D9B7922A9CAFA0063B1EC /* TableViewCell.swift */,
+				3D8D9B7A22A9CAFA0063B1EC /* TableViewCell.xib */,
 			);
 			name = "Activitéé";
 			path = "Activitéé";
@@ -451,6 +457,7 @@
 				3DB42022229FFA7D007A5B4C /* DetaillProfil.xib in Resources */,
 				3D8FBFE4225A8F93005AE074 /* SignUpViewController.xib in Resources */,
 				0C70885D2282CB3500269534 /* DetailAnnonceViewController.xib in Resources */,
+				3D8D9B7C22A9CAFA0063B1EC /* TableViewCell.xib in Resources */,
 				3D8FBFE0225A7297005AE074 /* HomeViewController.xib in Resources */,
 				3DFCB811226BD83100F6932A /* WelcomeViewController.xib in Resources */,
 				3DB42018229FF19B007A5B4C /* ProfilCellul.xib in Resources */,
@@ -589,6 +596,7 @@
 				3D8FBFE3225A8F93005AE074 /* SignUpViewController.swift in Sources */,
 				3DFCB810226BD83100F6932A /* WelcomeViewController.swift in Sources */,
 				3D90FF30229D674400168AAB /* ProfileViewController.swift in Sources */,
+				3D8D9B7B22A9CAFA0063B1EC /* TableViewCell.swift in Sources */,
 				3D2CF5EB225E8ADB00C5588C /* SignInViewController.swift in Sources */,
 				3D8FBFDF225A7297005AE074 /* HomeViewController.swift in Sources */,
 				3D99CADB22A09D6A004F8D12 /* Mission.swift in Sources */,

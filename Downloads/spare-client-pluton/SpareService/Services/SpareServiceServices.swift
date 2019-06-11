@@ -44,6 +44,13 @@ public class SpareServiceServices {
             completion(json)
         }
     }
+    public func getMission(completion: @escaping ([String])->Void) {
+        Alamofire.request("http://localhost:3000/Mission").responseJSON { (res) in
+            guard let json = res.value as? [String] else { return }
+            completion(json)
+        }
+    }
+    
     
     public func getServices(type: String, completion: @escaping ([[String:Any]])->Void) {
         let params = [
