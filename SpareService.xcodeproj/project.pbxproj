@@ -11,6 +11,19 @@
 		0C61E9BB228066E500848C78 /* DescriptionServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C61E9B9228066E500848C78 /* DescriptionServiceViewController.xib */; };
 		0C70885C2282CB3500269534 /* DetailAnnonceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C70885A2282CB3500269534 /* DetailAnnonceViewController.swift */; };
 		0C70885D2282CB3500269534 /* DetailAnnonceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C70885B2282CB3500269534 /* DetailAnnonceViewController.xib */; };
+		0C8AB90A22B0EFF300C1DBD6 /* Prestataire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AB90922B0EFF300C1DBD6 /* Prestataire.swift */; };
+		0C8AB90F22B1383700C1DBD6 /* PrestataireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AB90D22B1383700C1DBD6 /* PrestataireViewController.swift */; };
+		0C8AB91022B1383700C1DBD6 /* PrestataireViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AB90E22B1383700C1DBD6 /* PrestataireViewController.xib */; };
+		0C8AB91622C2549700C1DBD6 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AB91522C2549700C1DBD6 /* Mission.swift */; };
+		0C8AB91922C25B8900C1DBD6 /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AB91722C25B8800C1DBD6 /* MissionViewController.swift */; };
+		0C8AB91A22C25B8900C1DBD6 /* MissionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AB91822C25B8900C1DBD6 /* MissionViewController.xib */; };
+		0C8AB91D22C2601000C1DBD6 /* MissionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AB91B22C2601000C1DBD6 /* MissionTableViewCell.swift */; };
+		0C8AB91E22C2601000C1DBD6 /* MissionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AB91C22C2601000C1DBD6 /* MissionTableViewCell.xib */; };
+		0C8AB92022CB636D00C1DBD6 /* Annonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AB91F22CB636D00C1DBD6 /* Annonce.swift */; };
+		0C8AB92322CCA69300C1DBD6 /* MissionSelectedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C8AB92122CCA69300C1DBD6 /* MissionSelectedViewController.swift */; };
+		0C8AB92422CCA69300C1DBD6 /* MissionSelectedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C8AB92222CCA69300C1DBD6 /* MissionSelectedViewController.xib */; };
+		0C9A18DF22A94B210023961A /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C9A18DD22A94B210023961A /* FindViewController.swift */; };
+		0C9A18E022A94B210023961A /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A18DE22A94B210023961A /* FindViewController.xib */; };
 		3D2CF5EB225E8ADB00C5588C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CF5E9225E8ADB00C5588C /* SignInViewController.swift */; };
 		3D2CF5EC225E8ADB00C5588C /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CF5EA225E8ADB00C5588C /* SignInViewController.xib */; };
 		3D3FE74F225A6A2400A61995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FE74E225A6A2400A61995 /* AppDelegate.swift */; };
@@ -67,6 +80,19 @@
 		0C61E9B9228066E500848C78 /* DescriptionServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionServiceViewController.xib; sourceTree = "<group>"; };
 		0C70885A2282CB3500269534 /* DetailAnnonceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAnnonceViewController.swift; sourceTree = "<group>"; };
 		0C70885B2282CB3500269534 /* DetailAnnonceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailAnnonceViewController.xib; sourceTree = "<group>"; };
+		0C8AB90922B0EFF300C1DBD6 /* Prestataire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Prestataire.swift; path = SpareService/View/Recherche/Prestataire.swift; sourceTree = SOURCE_ROOT; };
+		0C8AB90D22B1383700C1DBD6 /* PrestataireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrestataireViewController.swift; sourceTree = "<group>"; };
+		0C8AB90E22B1383700C1DBD6 /* PrestataireViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrestataireViewController.xib; sourceTree = "<group>"; };
+		0C8AB91522C2549700C1DBD6 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mission.swift; path = ../Mission.swift; sourceTree = "<group>"; };
+		0C8AB91722C25B8800C1DBD6 /* MissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
+		0C8AB91822C25B8900C1DBD6 /* MissionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionViewController.xib; sourceTree = "<group>"; };
+		0C8AB91B22C2601000C1DBD6 /* MissionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTableViewCell.swift; sourceTree = "<group>"; };
+		0C8AB91C22C2601000C1DBD6 /* MissionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionTableViewCell.xib; sourceTree = "<group>"; };
+		0C8AB91F22CB636D00C1DBD6 /* Annonce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Annonce.swift; path = ../Annonce.swift; sourceTree = "<group>"; };
+		0C8AB92122CCA69300C1DBD6 /* MissionSelectedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionSelectedViewController.swift; sourceTree = "<group>"; };
+		0C8AB92222CCA69300C1DBD6 /* MissionSelectedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionSelectedViewController.xib; sourceTree = "<group>"; };
+		0C9A18DD22A94B210023961A /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		0C9A18DE22A94B210023961A /* FindViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FindViewController.xib; sourceTree = "<group>"; };
 		362CAD798AA21AE7DEB327FC /* Pods-SpareServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SpareServiceTests/Pods-SpareServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D2CF5E9225E8ADB00C5588C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3D2CF5EA225E8ADB00C5588C /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
@@ -97,7 +123,7 @@
 		3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		3F0A4567226DE01800678759 /* SpareServiceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpareServiceServices.swift; sourceTree = "<group>"; };
-		3F90768E227332B2004BB09C /* SubServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubServicesViewController.swift; sourceTree = "<group>"; };
+		3F90768E227332B2004BB09C /* SubServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SubServicesViewController.swift; path = ../SubServicesViewController.swift; sourceTree = "<group>"; };
 		3F90768F227332B2004BB09C /* SubServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubServicesViewController.xib; sourceTree = "<group>"; };
 		3F907692227339F2004BB09C /* SubServicesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubServicesTableViewCell.swift; sourceTree = "<group>"; };
 		3F907693227339F2004BB09C /* SubServicesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubServicesTableViewCell.xib; sourceTree = "<group>"; };
@@ -161,6 +187,54 @@
 			path = SignView;
 			sourceTree = "<group>";
 		};
+		0C8AB90B22B1371100C1DBD6 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */,
+				3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		0C8AB90C22B1373000C1DBD6 /* AnnonceProcess */ = {
+			isa = PBXGroup;
+			children = (
+				3FDBE7C2226F358400D05F63 /* ServiceCollectionViewCell.swift */,
+				3FDBE7C3226F358400D05F63 /* ServiceCollectionViewCell.xib */,
+				3F90768E227332B2004BB09C /* SubServicesViewController.swift */,
+				3F90768F227332B2004BB09C /* SubServicesViewController.xib */,
+				3F907692227339F2004BB09C /* SubServicesTableViewCell.swift */,
+				3F907693227339F2004BB09C /* SubServicesTableViewCell.xib */,
+				0C61E9B8228066E500848C78 /* DescriptionServiceViewController.swift */,
+				0C61E9B9228066E500848C78 /* DescriptionServiceViewController.xib */,
+				0C70885A2282CB3500269534 /* DetailAnnonceViewController.swift */,
+				0C70885B2282CB3500269534 /* DetailAnnonceViewController.xib */,
+			);
+			path = AnnonceProcess;
+			sourceTree = "<group>";
+		};
+		0C8AB92522CE0E7400C1DBD6 /* MissProcess */ = {
+			isa = PBXGroup;
+			children = (
+				0C8AB91722C25B8800C1DBD6 /* MissionViewController.swift */,
+				0C8AB91822C25B8900C1DBD6 /* MissionViewController.xib */,
+				0C8AB91B22C2601000C1DBD6 /* MissionTableViewCell.swift */,
+				0C8AB91C22C2601000C1DBD6 /* MissionTableViewCell.xib */,
+				0C8AB92122CCA69300C1DBD6 /* MissionSelectedViewController.swift */,
+				0C8AB92222CCA69300C1DBD6 /* MissionSelectedViewController.xib */,
+			);
+			path = MissProcess;
+			sourceTree = "<group>";
+		};
+		0C9A18DC22A94AEE0023961A /* Recherche */ = {
+			isa = PBXGroup;
+			children = (
+				0C9A18DD22A94B210023961A /* FindViewController.swift */,
+				0C9A18DE22A94B210023961A /* FindViewController.xib */,
+			);
+			path = Recherche;
+			sourceTree = "<group>";
+		};
 		3D3FE742225A6A2300A61995 = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +293,9 @@
 		3D3FE77F225A6FCA00A61995 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0C8AB91F22CB636D00C1DBD6 /* Annonce.swift */,
+				0C8AB91522C2549700C1DBD6 /* Mission.swift */,
+				0C8AB90922B0EFF300C1DBD6 /* Prestataire.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -226,25 +303,19 @@
 		3D3FE780225A6FE400A61995 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0C8AB92522CE0E7400C1DBD6 /* MissProcess */,
+				0C8AB90C22B1373000C1DBD6 /* AnnonceProcess */,
+				0C8AB90B22B1371100C1DBD6 /* HomePage */,
+				0C9A18DC22A94AEE0023961A /* Recherche */,
 				3D90FF2D229D66E000168AAB /* Contact */,
 				3D90FF2C229D66C700168AAB /* Activité */,
 				3D90FF2B229D66BA00168AAB /* Profile */,
 				3D3FE75A225A6A2500A61995 /* LaunchScreen.storyboard */,
 				0C7088592282C9B300269534 /* SignView */,
 				0C7088582282C91A00269534 /* LaunchView */,
-				3DFCB80E226BD83100F6932A /* WelcomeViewController.swift */,
-				3DFCB80F226BD83100F6932A /* WelcomeViewController.xib */,
-				3FDBE7C2226F358400D05F63 /* ServiceCollectionViewCell.swift */,
-				3FDBE7C3226F358400D05F63 /* ServiceCollectionViewCell.xib */,
-				3F90768E227332B2004BB09C /* SubServicesViewController.swift */,
-				3F90768F227332B2004BB09C /* SubServicesViewController.xib */,
-				3F907692227339F2004BB09C /* SubServicesTableViewCell.swift */,
-				3F907693227339F2004BB09C /* SubServicesTableViewCell.xib */,
-				0C61E9B8228066E500848C78 /* DescriptionServiceViewController.swift */,
-				0C61E9B9228066E500848C78 /* DescriptionServiceViewController.xib */,
-				0C70885A2282CB3500269534 /* DetailAnnonceViewController.swift */,
-				0C70885B2282CB3500269534 /* DetailAnnonceViewController.xib */,
 				3D90FF3C229DAF7E00168AAB /* SpareTabBarController.swift */,
+				0C8AB90D22B1383700C1DBD6 /* PrestataireViewController.swift */,
+				0C8AB90E22B1383700C1DBD6 /* PrestataireViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -422,8 +493,13 @@
 				0C61E9BB228066E500848C78 /* DescriptionServiceViewController.xib in Resources */,
 				3FDBE7C5226F358400D05F63 /* ServiceCollectionViewCell.xib in Resources */,
 				3D90FF43229DEB1400168AAB /* Assets.xcassets in Resources */,
+				0C8AB91E22C2601000C1DBD6 /* MissionTableViewCell.xib in Resources */,
+				0C8AB91022B1383700C1DBD6 /* PrestataireViewController.xib in Resources */,
 				3D3FE75C225A6A2500A61995 /* LaunchScreen.storyboard in Resources */,
+				0C8AB92422CCA69300C1DBD6 /* MissionSelectedViewController.xib in Resources */,
+				0C8AB91A22C25B8900C1DBD6 /* MissionViewController.xib in Resources */,
 				3F907695227339F2004BB09C /* SubServicesTableViewCell.xib in Resources */,
+				0C9A18E022A94B210023961A /* FindViewController.xib in Resources */,
 				3F907691227332B2004BB09C /* SubServicesViewController.xib in Resources */,
 				3D90FF41229DE62B00168AAB /* home.svg in Resources */,
 				3D90FF31229D674400168AAB /* ProfileViewController.xib in Resources */,
@@ -551,8 +627,11 @@
 				3D90FF3D229DAF7E00168AAB /* SpareTabBarController.swift in Sources */,
 				3D3FE757225A6A2400A61995 /* SpareService.xcdatamodeld in Sources */,
 				3D3FE74F225A6A2400A61995 /* AppDelegate.swift in Sources */,
+				0C8AB91D22C2601000C1DBD6 /* MissionTableViewCell.swift in Sources */,
+				0C9A18DF22A94B210023961A /* FindViewController.swift in Sources */,
 				3FDBE7C4226F358400D05F63 /* ServiceCollectionViewCell.swift in Sources */,
 				0C70885C2282CB3500269534 /* DetailAnnonceViewController.swift in Sources */,
+				0C8AB92322CCA69300C1DBD6 /* MissionSelectedViewController.swift in Sources */,
 				3F907690227332B2004BB09C /* SubServicesViewController.swift in Sources */,
 				3F0A4568226DE01800678759 /* SpareServiceServices.swift in Sources */,
 				3D90FF34229D676200168AAB /* MyActiviteViewController.swift in Sources */,
@@ -562,6 +641,11 @@
 				3D90FF30229D674400168AAB /* ProfileViewController.swift in Sources */,
 				3D2CF5EB225E8ADB00C5588C /* SignInViewController.swift in Sources */,
 				3D8FBFDF225A7297005AE074 /* HomeViewController.swift in Sources */,
+				0C8AB90A22B0EFF300C1DBD6 /* Prestataire.swift in Sources */,
+				0C8AB90F22B1383700C1DBD6 /* PrestataireViewController.swift in Sources */,
+				0C8AB91922C25B8900C1DBD6 /* MissionViewController.swift in Sources */,
+				0C8AB92022CB636D00C1DBD6 /* Annonce.swift in Sources */,
+				0C8AB91622C2549700C1DBD6 /* Mission.swift in Sources */,
 				3D90FF38229DA84E00168AAB /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

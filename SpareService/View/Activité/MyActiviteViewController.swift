@@ -10,6 +10,13 @@ import UIKit
 
 class MyActiviteViewController: UIViewController {
 
+    
+    class func newInstance() -> MyActiviteViewController {
+        let mavc = MyActiviteViewController()
+        return mavc
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

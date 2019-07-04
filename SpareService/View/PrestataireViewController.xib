@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrestataireViewController" customModule="SpareService" customModuleProvider="target">
+            <connections>
+                <outlet property="adresseLabel" destination="ztg-dM-ywW" id="ney-xk-9H1"/>
+                <outlet property="emailLabel" destination="QlJ-cj-rBX" id="mu9-KU-xMN"/>
+                <outlet property="nomLabel" destination="lbO-AB-nUM" id="A59-xp-hJm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbO-AB-nUM">
+                    <rect key="frame" x="0.0" y="224" width="1024" height="53"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlJ-cj-rBX">
+                    <rect key="frame" x="0.0" y="425" width="1024" height="53"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adresse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztg-dM-ywW">
+                    <rect key="frame" x="0.0" y="688" width="1024" height="53"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="44"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ztg-dM-ywW" firstAttribute="top" secondItem="QlJ-cj-rBX" secondAttribute="bottom" constant="210" id="08y-Fc-nid"/>
+                <constraint firstItem="ztg-dM-ywW" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="2YP-ld-kYk"/>
+                <constraint firstItem="lbO-AB-nUM" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5bt-8c-iWn"/>
+                <constraint firstItem="QlJ-cj-rBX" firstAttribute="top" secondItem="lbO-AB-nUM" secondAttribute="bottom" constant="148" id="8w9-L4-WBC"/>
+                <constraint firstItem="lbO-AB-nUM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ACU-CF-aCm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ztg-dM-ywW" secondAttribute="trailing" id="Cul-SU-Gqa"/>
+                <constraint firstItem="lbO-AB-nUM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="FAw-W9-y1r"/>
+                <constraint firstItem="QlJ-cj-rBX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Mit-04-Qxt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lbO-AB-nUM" secondAttribute="trailing" id="XAv-hz-P5D"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QlJ-cj-rBX" secondAttribute="trailing" id="aic-ZC-DpJ"/>
+                <constraint firstItem="ztg-dM-ywW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hjg-cY-2M3"/>
+                <constraint firstItem="QlJ-cj-rBX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="iRi-aL-plx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="19.921875" y="23.718887262079061"/>
+        </view>
+    </objects>
+</document>

@@ -10,21 +10,28 @@ import UIKit
 
 class SpareTabBarController: UITabBarController {
     
-    class func newInstance(email: String, services: [String]) -> SpareTabBarController {
+    class func newInstance(email: String, services: [String], missions: [Mission]) -> SpareTabBarController {
         let controller = SpareTabBarController();
         
         let welcomeNavigation = UINavigationController(rootViewController: WelcomeViewController.newInstance(email: email, services: services))
         let activityNavigation = UINavigationController(rootViewController: MyActiviteViewController())
+        let findNavigation = UINavigationController(rootViewController: FindViewController())
+        let missionNavigation = UINavigationController(rootViewController: MissionViewController.newInstance(missions: missions))
         
         controller.tabBar.tintColor = .red
         
         welcomeNavigation.tabBarItem.title = "Home"
         activityNavigation.tabBarItem.title = "Activité"
         activityNavigation.tabBarItem.image = UIImage(named: "briefcase")
+        findNavigation.tabBarItem.title = "Recherche"
+        findNavigation.tabBarItem.image = UIImage(named: "loop")
+        missionNavigation.tabBarItem.title = "Réponses"
 
         controller.setViewControllers([
             welcomeNavigation,
-            activityNavigation
+            activityNavigation,
+            missionNavigation,
+            findNavigation
             ], animated: false)
         
         return controller

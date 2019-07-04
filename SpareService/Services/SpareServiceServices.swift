@@ -55,18 +55,75 @@ public class SpareServiceServices {
         }
     }
     
-    public func addAnnonce(email: String, serviceName: String, subServiceName: String, serviceDescription: String, serviceAdresse: String, completion: @escaping([[String:Any]])->Void) {
+    public func addAnnonce(email: String, serviceName: String, subServiceName: String, serviceDescription: String, serviceAdresse: String, debutDate: String, debutHeure: String, completion: @escaping([[String:Any]])->Void) {
         let params = [
             "email" : email,
             "serviceName" : serviceName,
             "subServiceName" : subServiceName,
             "serviceDescription" : serviceDescription,
-            "serviceAdresse" : serviceAdresse
+            "serviceAdresse" : serviceAdresse,
+            "debutDate": debutDate,
+            "debutHeure": debutHeure
         ]
-        Alamofire.request("https://spare-api.herokuapp.com/ajoutAnnonce", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { (res) in
+        Alamofire.request("http://localhost:3000/ajoutAnnonce", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else {return}
             
             completion(json)
         }
     }
+    
+    public func getAllPrestataire(completion: @escaping([[String:Any]]) -> Void) {
+        Alamofire.request("https://spare-api.herokuapp.com/prestataire").responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
+    
+    public func getPrestataireByEmail(email: String, completion: @escaping ([[String:Any]])->Void) {
+        let params = [
+            "email" : email
+        ]
+        Alamofire.request("http://localhost:3000/prestataireByEmail", parameters : params).responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
+    
+    public func getMissionClient(id: String, completion: @escaping ([[String:Any]])->Void) {
+        let params = [
+            "id" : id
+        ]
+        Alamofire.request("http://localhost:3000/getMissionClient", parameters : params).responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
+    
+    public func getAnnonceById(idAnnonce :String, completion: @escaping ([[String:Any]])->Void) {
+        
+        Alamofire.request("http://localhost:3000/getAnnonceById/\(idAnnonce)").responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
+    
+    public func getPrestataireById(idPrestataire: String, completion: @escaping ([[String:Any]])->Void) {
+        
+        Alamofire.request("http://localhost:3000/getPrestataireById/\(idPrestataire)").responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
+    
+    public func changeIsValideMission(idMission: String, isValide: String, completion: @escaping ([[String:Any]])-> Void) {
+        let params = [
+            "isValide" : isValide
+        ]
+        Alamofire.request("http://localhost:3000/missionChangeIsValide/\(idMission)", method: .patch, parameters : params).responseJSON { (res) in
+            guard let json = res.value as? [[String:Any]] else { return }
+            completion(json)
+        }
+    }
+
+    
 }
