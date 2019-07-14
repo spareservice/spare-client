@@ -26,6 +26,8 @@
 		0C9A18E022A94B210023961A /* FindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9A18DE22A94B210023961A /* FindViewController.xib */; };
 		3D2CF5EB225E8ADB00C5588C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2CF5E9225E8ADB00C5588C /* SignInViewController.swift */; };
 		3D2CF5EC225E8ADB00C5588C /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2CF5EA225E8ADB00C5588C /* SignInViewController.xib */; };
+		3D2E44E022DAB2E0004858EA /* PaimentPaypalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2E44DE22DAB2E0004858EA /* PaimentPaypalController.swift */; };
+		3D2E44E122DAB2E0004858EA /* PaimentPaypalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D2E44DF22DAB2E0004858EA /* PaimentPaypalController.xib */; };
 		3D3FE74F225A6A2400A61995 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FE74E225A6A2400A61995 /* AppDelegate.swift */; };
 		3D3FE757225A6A2400A61995 /* SpareService.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D3FE755225A6A2400A61995 /* SpareService.xcdatamodeld */; };
 		3D3FE75C225A6A2500A61995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D3FE75A225A6A2500A61995 /* LaunchScreen.storyboard */; };
@@ -96,6 +98,8 @@
 		362CAD798AA21AE7DEB327FC /* Pods-SpareServiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpareServiceTests.release.xcconfig"; path = "Target Support Files/Pods-SpareServiceTests/Pods-SpareServiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D2CF5E9225E8ADB00C5588C /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3D2CF5EA225E8ADB00C5588C /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		3D2E44DE22DAB2E0004858EA /* PaimentPaypalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaimentPaypalController.swift; sourceTree = "<group>"; };
+		3D2E44DF22DAB2E0004858EA /* PaimentPaypalController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaimentPaypalController.xib; sourceTree = "<group>"; };
 		3D3FE74B225A6A2400A61995 /* SpareService.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpareService.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D3FE74E225A6A2400A61995 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D3FE756225A6A2400A61995 /* SpareService.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpareService.xcdatamodel; sourceTree = "<group>"; };
@@ -235,6 +239,15 @@
 			path = Recherche;
 			sourceTree = "<group>";
 		};
+		3D2E44DD22DAAD9D004858EA /* paiment  */ = {
+			isa = PBXGroup;
+			children = (
+				3D2E44DE22DAB2E0004858EA /* PaimentPaypalController.swift */,
+				3D2E44DF22DAB2E0004858EA /* PaimentPaypalController.xib */,
+			);
+			path = "paiment ";
+			sourceTree = "<group>";
+		};
 		3D3FE742225A6A2300A61995 = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +316,7 @@
 		3D3FE780225A6FE400A61995 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D2E44DD22DAAD9D004858EA /* paiment  */,
 				0C8AB92522CE0E7400C1DBD6 /* MissProcess */,
 				0C8AB90C22B1373000C1DBD6 /* AnnonceProcess */,
 				0C8AB90B22B1371100C1DBD6 /* HomePage */,
@@ -500,6 +514,7 @@
 				0C8AB91A22C25B8900C1DBD6 /* MissionViewController.xib in Resources */,
 				3F907695227339F2004BB09C /* SubServicesTableViewCell.xib in Resources */,
 				0C9A18E022A94B210023961A /* FindViewController.xib in Resources */,
+				3D2E44E122DAB2E0004858EA /* PaimentPaypalController.xib in Resources */,
 				3F907691227332B2004BB09C /* SubServicesViewController.xib in Resources */,
 				3D90FF41229DE62B00168AAB /* home.svg in Resources */,
 				3D90FF31229D674400168AAB /* ProfileViewController.xib in Resources */,
@@ -623,6 +638,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D2E44E022DAB2E0004858EA /* PaimentPaypalController.swift in Sources */,
 				3F907694227339F2004BB09C /* SubServicesTableViewCell.swift in Sources */,
 				3D90FF3D229DAF7E00168AAB /* SpareTabBarController.swift in Sources */,
 				3D3FE757225A6A2400A61995 /* SpareService.xcdatamodeld in Sources */,

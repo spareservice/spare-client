@@ -79,6 +79,7 @@ class DetailAnnonceViewController: UIViewController {
     }
     
     @IBAction func finaliserBtn(_ sender: UIButton) {
+        /*
         print("\(adresseTextField.text!), \(codePostalTextField.text!) \(villeTextField.text!)")
         SpareServiceServices.default.addAnnonce(email: email, serviceName: serviceName, subServiceName: subServiceName, serviceDescription: serviceDescription, serviceAdresse: "\(adresseTextField.text!), \(codePostalTextField.text!) \(villeTextField.text!)", debutDate: "\(dateTextView.text!)", debutHeure: "\(hourTextView.text!)", completion: { (res) in
                 print(res)
@@ -97,15 +98,10 @@ class DetailAnnonceViewController: UIViewController {
                 self.present(alert, animated: true)
             })
     }
+    */
+        let next = PaimentPaypalController.newInstance()
+        self.navigationController?.pushViewController(next, animated: true)
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-
+        
+    }
 }

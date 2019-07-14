@@ -65,7 +65,7 @@ public class SpareServiceServices {
             "debutDate": debutDate,
             "debutHeure": debutHeure
         ]
-        Alamofire.request("http://localhost:3000/ajoutAnnonce", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { (res) in
+        Alamofire.request("http://localhost:3000/services/ajoutAnnonce", method: .post, parameters: params, encoding: JSONEncoding.default).responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else {return}
             
             completion(json)
@@ -93,7 +93,7 @@ public class SpareServiceServices {
         let params = [
             "id" : id
         ]
-        Alamofire.request("http://localhost:3000/getMissionClient", parameters : params).responseJSON { (res) in
+        Alamofire.request("http://localhost:3000/mission", parameters : params).responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else { return }
             completion(json)
         }
@@ -101,7 +101,7 @@ public class SpareServiceServices {
     
     public func getAnnonceById(idAnnonce :String, completion: @escaping ([[String:Any]])->Void) {
         
-        Alamofire.request("http://localhost:3000/getAnnonceById/\(idAnnonce)").responseJSON { (res) in
+        Alamofire.request("http://localhost:3000/mission/getAnnonceById/\(idAnnonce)").responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else { return }
             completion(json)
         }
@@ -109,7 +109,7 @@ public class SpareServiceServices {
     
     public func getPrestataireById(idPrestataire: String, completion: @escaping ([[String:Any]])->Void) {
         
-        Alamofire.request("http://localhost:3000/getPrestataireById/\(idPrestataire)").responseJSON { (res) in
+        Alamofire.request("http://localhost:3000/prestataire/getPrestataireById/\(idPrestataire)").responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else { return }
             completion(json)
         }
@@ -119,7 +119,7 @@ public class SpareServiceServices {
         let params = [
             "isValide" : isValide
         ]
-        Alamofire.request("http://localhost:3000/missionChangeIsValide/\(idMission)", method: .patch, parameters : params).responseJSON { (res) in
+        Alamofire.request("http://localhost:3000/mission/missionChangeIsValide/\(idMission)", method: .patch, parameters : params).responseJSON { (res) in
             guard let json = res.value as? [[String:Any]] else { return }
             completion(json)
         }

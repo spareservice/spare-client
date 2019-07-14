@@ -38,7 +38,7 @@ class SignUpViewController: UIViewController {
                     self.titreLabel.isHidden = false
                 } else {
                     SpareServiceServices.default.addClientDetail(nom: self.nomTextField.text!, prenom: self.prenomTextField.text!, email: self.emailTextField.text!, mdp: self.mdpTextField.text!, tel: self.telTextField.text!, completion: { resp in
-                        guard let email = resp[0]["email"] as? String else {return}
+                        guard (resp[0]["email"] as? String) != nil else {return}
                         
                     })
                     self.navigationController?.pushViewController(next, animated: true)
