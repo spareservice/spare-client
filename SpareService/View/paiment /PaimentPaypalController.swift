@@ -24,7 +24,6 @@ class PaimentPaypalController: UIViewController {
 
     @IBAction func login(_ sender: Any) {
         UIApplication.shared.open(URL(string: "http://localhost:3000/paiment/buy")! as URL, options: [:], completionHandler: nil)
-
     }
     
     
